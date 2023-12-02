@@ -11,13 +11,22 @@
     }
 
     html, body {
-      background-image: url('https://pic.imgdb.cn/item/64158272a682492fcc685222.jpg');
-  /* 可选：设置背景属性，比如背景尺寸、平铺方式等 */
-  background-size: cover; /* 背景图像尺寸自适应 */
-  background-repeat: no-repeat; /* 不重复平铺背景图像 */
-  /* 如果需要指定背景颜色或其他背景属性，也可以在这里添加 */
-  /* background-color: #f0f0f0; */
-    }
+  background-image: url('https://pic.imgdb.cn/item/64158272a682492fcc685222.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 这里设置其他背景属性，以适应你的需求 */
+}
+
+/* 为需要透明和模糊效果的元素设置样式 */
+.field,
+.content,
+footer {
+  background-color: rgba(255, 255, 255, 0.5); /* 透明度为50%的白色 */
+  backdrop-filter: blur(5px); /* 添加模糊效果，可根据需要调整模糊程度 */
+  /* 这里可以根据需要设置其他样式，比如内边距和外边距 */
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
     .box {
   background-color: rgba(255, 255, 255, 0.5); /* 透明度为50%的白色 */
   backdrop-filter: blur(5px); /* 添加模糊效果，可根据需要调整模糊程度 */
